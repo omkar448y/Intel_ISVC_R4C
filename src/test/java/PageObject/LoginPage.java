@@ -43,12 +43,12 @@ public class LoginPage {
 	
 	
 	public void SetUserName(String uname) {
-        waitHelper.waitForElement(textEmail, Duration.ofSeconds(10));
+       // waitHelper.waitForElement(textEmail, Duration.ofSeconds(10));
 		textEmail.sendKeys(uname);
 	}
 	public void SetPassword(String Password) {
 		textPassword.sendKeys(Password);
-        waitHelper.waitForElement(textEmail, Duration.ofSeconds(10));
+       // waitHelper.waitForElement(textEmail, Duration.ofSeconds(10));
 	}
 
 	public void Clickonlogin() {

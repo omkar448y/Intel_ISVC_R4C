@@ -5,11 +5,11 @@ import io.cucumber.testng.CucumberOptions;
 
 public class TestRunner {
 
-	@CucumberOptions(features = "C:\\Users\\oyadavx\\git\\repository3\\Intel_ISVC_R4C\\src\\test\\java\\Features\\ContactPage.feature",
+	@CucumberOptions(features = "C:\\Users\\oyadavx\\git\\repository3\\Intel_ISVC_R4C\\src\\test\\java\\Features\\ContactPage_Technical.feature",
 
 			glue = "StepDefination", 
-			//tags = "@HighPriority",
-			dryRun=true, monochrome = true, 
+			tags = "@HighPriority",
+			dryRun=false, monochrome = true, 
 			plugin = {"pretty", "html:target/cucumber-reports.html", "junit:target/cucumber.xml"} )
 			public class CucumberTest extends AbstractTestNGCucumberTests {
 			} 
