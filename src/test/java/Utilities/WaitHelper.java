@@ -21,7 +21,15 @@ public class WaitHelper extends  BaseClass
         this.driver = driver;
     }
 
+<<<<<<< HEAD
  
+=======
+    // Add Explicit Wait 
+//    public void waitForElement(WebElement element, Duration timeOutInSeconds) {
+//        WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
+//        wait.until(ExpectedConditions.visibilityOf(element));
+//    }
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
     public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Wait for a maximum of 10 seconds
         return wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -54,10 +62,14 @@ public class WaitHelper extends  BaseClass
             throw new RuntimeException();
         }
     }
+<<<<<<< HEAD
     public void waitForElementToBeClickable(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+=======
+    
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
     
     
     
