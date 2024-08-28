@@ -38,11 +38,19 @@ public class LoginPage {
 	WebElement Clickonlogout; // To click on Log out option
 
 	public void SetUserName(String uname) {
+<<<<<<< HEAD
+=======
+       // waitHelper.waitForElement(textEmail, Duration.ofSeconds(10));
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 		textEmail.sendKeys(uname);
 	}
 
 	public void SetPassword(String Password) {
 		textPassword.sendKeys(Password);
+<<<<<<< HEAD
+=======
+       // waitHelper.waitForElement(textEmail, Duration.ofSeconds(10));
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 	}
 
 	public void Clickonlogin() {

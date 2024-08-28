@@ -51,6 +51,7 @@ public class ContactPage_R4C_CaseCreation {
 	WebElement EnterSearchcontact;
 	@FindBy(xpath = "//button[normalize-space()='Search...']")
 	WebElement EnterTextGolbarsearch;
+<<<<<<< HEAD
 	@FindBy(xpath = "//a[normalize-space()='Sarah Aggelidis']")
 	WebElement selecttextcontact;
 	
@@ -58,6 +59,12 @@ public class ContactPage_R4C_CaseCreation {
 	@FindBy(xpath="//section[@aria-expanded='true']//section[@role='tabpanel']//button[@type='button'][normalize-space()='New R4C Case']")
 	WebElement ClickonNewR4CCaseButton;
 	
+=======
+	@FindBy(xpath = "//tbody/tr/td[@role='gridcell']/span/div/span[1]//following::a[@title='Sarah Aggelidis']")
+	WebElement selecttextcontact;
+	@FindBy(xpath = "//button[normalize-space()='New R4C Case']") // Click on the CreateR4CCase button
+	WebElement ClickonNewR4CCaseButton;
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 	@FindBy(xpath = "//span[@part='label'][normalize-space()='Stock Rotation']/..//span[@part='indicator']") // To //
 																												// Roatation
 	WebElement clickonservicetype;
@@ -86,7 +93,11 @@ public class ContactPage_R4C_CaseCreation {
 	WebElement AfterPONumberclickonNext;
 	@FindBy(xpath = "//button[normalize-space()='Product Validation']")
 	WebElement ProductvalidationButton;
+<<<<<<< HEAD
 	@FindBy(xpath = "//button[text()=\"Next\"]")
+=======
+	@FindBy(xpath = "//button[normalize-space()='Save for Later']//preceding::button[contains(text(),'Next')]")
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 	WebElement ClickonNextAfterProductvalidation; // To click on the next button after Product validation check box
 	@FindBy(xpath = "(//input[@inputmode=\"decimal\"])[1]") // To Enter Return Quantity To all field
 	WebElement enterquantityfirst;
@@ -110,7 +121,11 @@ public class ContactPage_R4C_CaseCreation {
 	WebElement ValidateAllownce;
 	@FindBy(xpath = "//button[@title='Cancel']//following::button[normalize-space()='Save & View Summary']")
 	WebElement SaveSummary;
+<<<<<<< HEAD
 	@FindBy(xpath = "//button[text()=\"Submit\"]")
+=======
+	@FindBy(xpath = "//button[normalize-space()='Edit']//following::button[normalize-space()='Submit']")
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 	WebElement ClickonsubmitafterSave;
 // --------------------------Scenario 2 Xpath Element----------
 	@FindBy(xpath = "//span[normalize-space()='SO Number']//following::input[@placeholder='Enter SO Number (use commas between multiple values)']") // Enter
@@ -127,6 +142,7 @@ public class ContactPage_R4C_CaseCreation {
 	@FindBy(xpath = "//span[contains(text(),'MM')]/..//span[contains(text(),'MM')]") // To click on the MM Radio Button
 	WebElement ClickOnMMRadioButton;
 	@FindBy(xpath = "//button[normalize-space()='Reset']//preceding::input[@placeholder='Enter the MM']") // To Enter MM
+<<<<<<< HEAD
 	WebElement EnterMMNumber;
 	@FindBy(xpath = "//button[normalize-space()='Reset']//following::button[normalize-space()='Search']") // To click on
 	WebElement ClickonSearchButtonAfterMM;
@@ -233,6 +249,123 @@ public class ContactPage_R4C_CaseCreation {
 	////tbody/tr[1]/th[1]     -----  //a[normalize-space()='Amy Adamo']
 	WebElement ClickOnFirstSearch;
 
+=======
+
+	WebElement EnterMMNumber;
+	@FindBy(xpath = "//button[normalize-space()='Reset']//following::button[normalize-space()='Search']") // To click on
+
+	WebElement ClickonSearchButtonAfterMM;
+	@FindBy(xpath = "//button[normalize-space()='Cancel']//preceding::button[normalize-space()='PO History']") // To
+
+	WebElement POHistoryButton;
+	@FindBy(xpath = "//button[normalize-space()='Cancel']//following::button[contains(text(),'Next')]") // To click on
+
+	WebElement POHistoryNext;
+// -----------------------Scenario 3 Xpath Element----------
+
+// ----------------------Scenario 4 Xpath Element----------
+	@FindBy(xpath = "//span[contains(text(),'Bulk Upload')]/..//span") // To click on the bulk upload button
+	WebElement BulkUploadRadioButton;
+	@FindBy(xpath = "//button[normalize-space()='Reset']//preceding::span[@part='button']") // To click on the Upload
+	WebElement UploadFile;
+	@FindBy(xpath = "//button[normalize-space()='Reset']//following::button[normalize-space()='Validate']") // To Click
+	WebElement ClickonValidate;
+// ------------------------Scenario 8  Xpath Element--------------
+	@FindBy(xpath = "//body//div//lightning-input[@data-key='CPN']//span//span[1]//following::span[contains(text(),'CPN')]") // To
+	WebElement ClickOnCPN;
+	@FindBy(xpath = "//button[normalize-space()='Reset']//preceding::input[@placeholder='Enter the CPN']") // To Enter
+	WebElement EnterCPN;
+	@FindBy(xpath = "//button[normalize-space()='Reset']//following::button[normalize-space()='Search']") // To Click on
+	WebElement AfterCPNSearch;
+//------------------------Scenario 9   Xpath Elelemnt---------------------
+	@FindBy(xpath = "//span[contains(text(),'Order Part Number')]/..//span") // To Click On the OPN Radio Button
+	WebElement ClickonOPNRadiobutton;
+	@FindBy(xpath = "//button[normalize-space()='Reset']//preceding::input[@placeholder='Enter the Order Part Number']")
+	WebElement EnterOPN;
+//----------------------Scenario 12-----------------------	
+	@FindBy(xpath = "//button[contains(text(),'Next')]//following::button[normalize-space()='Save for Later']")
+	WebElement MMSaveforlater;
+	@FindBy(xpath = "//div[@part='modal-footer']//button[@part='button'][normalize-space()='Cancel']//following::button[normalize-space()='OK']")
+	WebElement ClickonOkButton;
+	@FindBy(xpath = "//span[normalize-space()='Status']//following::lightning-formatted-text[normalize-space()='Open, Unsubmitted']")
+	WebElement getSavedstatustext;
+// -------------------Scenario 14 S
+	@FindBy(xpath = "//input[@placeholder=\"Select one\"]")
+	WebElement SelectL3User;
+	@FindBy(xpath = "//li[@data-id='vinayx.kumar.ganji@intel.com']//lightning-primitive-icon[@exportparts='icon']//*[name()='svg']//following::span[contains(text(),'Vinay Kumar Ganji')]")
+	WebElement L3agent;
+	@FindBy(xpath = "//div[@part='modal-footer']//button[@type='button'][normalize-space()='Cancel']//following::button[normalize-space()='Select']")
+	WebElement ClickonselectL3;
+	@FindBy(xpath = "//div[@part='modal-footer']//button[@type='button'][normalize-space()='Cancel']//following::button[normalize-space()='Select']")
+	WebElement SelectL3user;
+// -------------------Scenario 15 S
+	By ClickonAccept = By.xpath("//ul[contains(.,'Post')]/li/a[@title='Accept']");
+
+	@FindBy(xpath = "//section[@aria-expanded='true']//slot//slot//span[contains(text(),'Accept')]/../../..//span[contains(text(),'Edit')]")
+	WebElement ClickonEdit;
+
+	@FindBy(xpath = "//flexipage-component2[@data-component-id='forceChatter_publisher']//span[contains(text(),'Post')]/../../../../..//p")
+	WebElement EnterTextintoPost;
+
+// Scenario 16-------------------------
+
+	@FindBy(xpath = "//span[contains(text(),'0000500908-Ingram Micro LP')]")
+	WebElement SoldTOcontactSelect;
+	@FindBy(xpath = "//button[normalize-space()='OK']/..//button[@part='button'][normalize-space()='Cancel']")
+	WebElement IMFCancel;
+// Scenario 17--------------
+	@FindBy(xpath = "//div[@part='modal-footer']//button[@part='button'][normalize-space()='Cancel']//following::button[normalize-space()='OK']")
+	WebElement ClickOnOKIMF;
+// Scenario 18----------------------------------------
+	@FindBy(xpath = "//button[@aria-label='Return to Customer Address']/..//button[@aria-label='Return to Customer Address']")
+	WebElement ClickonCRA;
+	@FindBy(xpath = "//lightning-combobox[@data-name='Sales_Issue_Return_To_Cst_Address__c']//lightning-base-combobox-item[2]//span[2]")
+	WebElement SelectCRA;
+	@FindBy(xpath = "//button[@aria-label=\"Collection Address\"]")
+	WebElement ClickCA;
+	@FindBy(xpath = "//span[@title='X DOCK,Amsterdam,Noord-Holland,Netherlands']")
+	WebElement SelectCA;
+	@FindBy(xpath = "//button[@aria-label='Return to Customer Contact']")
+	WebElement ClickonRCC;
+	@FindBy(xpath = "//lightning-combobox[@data-name='Sales_Issue_Return_To_Cst_Contact__c']//lightning-base-combobox-item[1]//span[2]")
+	WebElement SelectRCC;
+	@FindBy(xpath = "//button[@aria-label='Collection Contact']")
+	WebElement ClickonCollectionContact;
+	@FindBy(xpath = "//lightning-combobox[@data-name='Sales_Issue_Collection_Contact__c']//lightning-base-combobox-item[1]//span[2]")
+	WebElement SelectCollectionContacts;
+	@FindBy(xpath = "//button[@title='Cancel']//following::button[normalize-space()='Next']")
+	WebElement clickonNextIMF;
+// ---------------Edit Case
+
+	
+	@FindBy(xpath="//button[@title='Cancel']//following::button[contains(text(),'Next')]")
+	WebElement Clicknextedit;
+	@FindBy(xpath = "//button[text()=\"Next\"]")
+	WebElement clickonnextafteredit;
+	@FindBy(xpath="//body/div/div[@aria-hidden='false']/section/div/div/div/div[@role='main']/section[@role='tabpanel']/div/div/section[@role='tabpanel']/div/div/div/div/div/div/one-record-home-flexipage2/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-contact_-record_-page1___-contact___-v-i-e-w/forcegenerated-flexipage_contact_record_page1_contact__view_js[@data-page-type='RecordPage']/record_flexipage-desktop-record-page-decorator/div/records-record-layout-event-broker/slot/slot/flexipage-record-home-template-desktop2/div/div/div/slot[@name='main']/flexipage-component2[@data-component-id='flexipage_tabset']/slot/flexipage-tabset2/div/lightning-tabset/div/slot/slot[@name='tabs']/flexipage-tab2[@role='tabpanel']/slot/flexipage-component2[@data-component-id='force_relatedListContainer']/slot/lst-related-list-container/div/div/lst-related-list-single-container/laf-progressive-container[@aria-busy='false']/slot/lst-related-list-single-app-builder-mapper/article[@aria-label='Cases']/lst-related-list-view-manager/a/span[1]")
+	WebElement ClickonALLcases;
+	@FindBy(xpath="//section[@aria-expanded='true']//a[@data-label='Details'][normalize-space()='Details']//following::a[@data-label='Related'][normalize-space()='Related']")
+	WebElement ClickonRelated;
+	@FindBy(xpath="//button[@aria-label='Search']")
+	WebElement globaltextenter;      // enter Text Globaly
+	
+// -----------------Case Edit TC-Submitted Pending Action-------------
+	
+	@FindBy(xpath="//button[@title='Show quick filters']")
+	WebElement ClickOnfilter ;
+	
+	@FindBy(xpath="//label[normalize-space()='Case']//following::input[@name='Case-CaseNumber']")
+	WebElement EnterTextIntocasefield;
+	
+	@FindBy(xpath="//button[normalize-space()='Apply']")
+	WebElement  Clickonapply;
+	
+	@FindBy(xpath="//tbody/tr[@role='row']/th[@data-label='Case']/lightning-primitive-cell-factory[@data-label='Case']/span[1]")
+	WebElement  SelectCase;
+	
+	
+	
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 // -------------Scenario No 1---------------------Action Methods--------------------------------------------------------------------------------------------------
 	public String getPageTitle() {
 		return ldriver.getTitle();
@@ -302,6 +435,7 @@ public class ContactPage_R4C_CaseCreation {
 		EnterSoldto.sendKeys("6006683685");
 	}
 
+<<<<<<< HEAD
 	public void EnterSoldToNumber(String string) 
 	{
 		EnterSoldto.click();
@@ -311,6 +445,9 @@ public class ContactPage_R4C_CaseCreation {
 	public void EnterSoldToOptIn() throws InterruptedException {
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
        // wait.until(ExpectedConditions.elementToBeClickable(EnterSoldto));
+=======
+	public void EnterSoldToOptIn() throws InterruptedException {
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 		EnterSoldto.click();
 		EnterSoldto.sendKeys("500908");
 	}
@@ -418,11 +555,14 @@ public class ContactPage_R4C_CaseCreation {
 		ClickonsubmitafterSave.click();
 	}
 
+<<<<<<< HEAD
 	public void clickonNextAccept() {
 		clickonNextAccept.click();
 
 	}
 
+=======
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 //-------------------- Scenario 2-----------------
 
 	public void EnterSONumber(String SOnumber) {
@@ -565,6 +705,7 @@ public class ContactPage_R4C_CaseCreation {
 		IMFCancel.click();
 	}
 
+<<<<<<< HEAD
 	public void ClickOnFirstSearch() {
 		
 //		try {
@@ -584,10 +725,13 @@ public class ContactPage_R4C_CaseCreation {
 		ClickOnFirstSearch.click();
 	}
 
+=======
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 // Scenario 17Optin/Out Ok---------
 	public void clickononIMF() {
 		ClickOnOKIMF.click();
 	}
+<<<<<<< HEAD
 	 
 	
 	@FindBy(xpath="//lightning-layout[1]//slot[1]//lightning-layout-item[1]//slot[1]//div[1]//span[1]//c-r4c_-a-g_-reusable-lookup[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//lightning-input[1]//lightning-primitive-input-simple[1]//div[1]//div[1]//input[1]")
@@ -628,9 +772,95 @@ public class ContactPage_R4C_CaseCreation {
 	public void clickonreturnreason() 
 	{Clickonreason.click();
 		
+=======
+// Scenario 18 Optin/Out GEO---------
+
+	public void ClickOnRCA() {
+		ClickonCRA.click();
+	}
+
+	public void selectRCA() {
+		SelectCRA.click();
+	}
+
+	public void ClickonCA() {
+		ClickCA.click();
+	}
+
+	public void SelectCA() {
+		SelectCA.click();
+	}
+
+	public void clickonRCC() {
+		ClickonRCC.click();
+	}
+
+	public void selectRCC() {
+		SelectRCC.click();
+	}
+
+	public void ClickonCC() {
+		ClickonCollectionContact.click();
+
+	}
+
+	public void SelectCC() {
+		SelectCollectionContacts.click();
+
+	}
+
+	public void clickonnextIMF() {
+		WaitHelper.waitForElementToBeClickable(driver, clickonNextIMF);
+		clickonNextIMF.click();
+	}
+
+//-------------------Case Edit-----------------
+
+	public void clickonnextafteredit() {
+		clickonnextafteredit.click();
+	}
+//-----------------Case Edit TC-Submitted Pending Action-------------
+	
+	public void ClickonRelated() 
+	{
+		ClickonRelated.click();
+	}
+	
+	public void ClickonALLcase() 
+	{
+		ClickonALLcases.click();
+	}
+	
+	public void globaltextenter()
+	{
+		globaltextenter.sendKeys("78263786");
+		
+	}
+	
+	public void ClickonFilter() 
+	{
+		ClickOnfilter.click();
+	}
+	public void EnterCaseintofield(String Case) 
+	{
+		EnterTextIntocasefield.sendKeys(Case);
+>>>>>>> 5199e9a122c3b8204da0c6f6aa466f404f2ae6f6
 	}
 	
 	
+	public void ClickOnAppy() 
+	{Clickonapply.click();
+		
+	}
+	public void SelectSearchedcase() 
+	{
+		SelectCase.click();
+	}
+	
+	public void Clickonextedit()
+	{
+		Clicknextedit.click();
+	}
 	
 	
 // Scenario 18 Optin/Out GEO---------
