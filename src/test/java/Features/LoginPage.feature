@@ -10,3 +10,9 @@ Feature: Login Againt L1
    When User Click on logout link
    Then Page Title should be "Recently Viewed | Contacts | Salesforce"
    And Close brower
+   
+Scenario: User logs in with valid credentials
+    Given I am on the Salesforce login page
+    When I enter valid credentials
+    And I click the login button
+    Then I should be logged in successfully
